@@ -1,0 +1,372 @@
+<title>ButterFact Privacy Policy</title>
+<style>
+  :root {
+    --bg: #faf9fc;
+    --surface: #ffffff;
+    --surface-alt: #f1eef7;
+    --border: #e1dcec;
+    --text: #1b1726;
+    --text-muted: #6b6577;
+    --accent: #6b2fcc;
+    --accent-soft: #ede4fb;
+    --accent-warm: #b5730a;
+    --accent-warm-soft: #f7ecd9;
+    --link: #5a26ad;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161320;
+      --surface: #1e1a2b;
+      --surface-alt: #262135;
+      --border: #352f47;
+      --text: #ece8f5;
+      --text-muted: #a29bb8;
+      --accent: #b794f5;
+      --accent-soft: #322a48;
+      --accent-warm: #e0a94f;
+      --accent-warm-soft: #3a2f1f;
+      --link: #c7a8fb;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #161320;
+    --surface: #1e1a2b;
+    --surface-alt: #262135;
+    --border: #352f47;
+    --text: #ece8f5;
+    --text-muted: #a29bb8;
+    --accent: #b794f5;
+    --accent-soft: #322a48;
+    --accent-warm: #e0a94f;
+    --accent-warm-soft: #3a2f1f;
+    --link: #c7a8fb;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .brand svg { width: 26px; height: 26px; flex-shrink: 0; }
+
+  .brand span {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(32px, 5vw, 44px);
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0 0 14px;
+  }
+
+  .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .lede {
+    font-size: 17px;
+    color: var(--text-muted);
+    max-width: 62ch;
+    margin: 20px 0 44px;
+  }
+
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 56px;
+  }
+
+  nav.toc .toc-label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  nav.toc ol {
+    columns: 2;
+    column-gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: toc;
+  }
+
+  nav.toc li {
+    break-inside: avoid;
+    margin-bottom: 8px;
+  }
+
+  nav.toc a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14.5px;
+  }
+
+  nav.toc a:hover, nav.toc a:focus-visible { color: var(--link); }
+
+  nav.toc .n {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-right: 8px;
+  }
+
+  section {
+    padding: 36px 0;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 24px;
+  }
+
+  section:first-of-type { border-top: none; padding-top: 0; }
+
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .sec-num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 14px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 6px;
+    padding: 2px 8px;
+    flex-shrink: 0;
+  }
+
+  section.conduct .sec-num {
+    color: var(--accent-warm);
+    background: var(--accent-warm-soft);
+  }
+
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 22px 0 8px;
+  }
+
+  p { margin: 0 0 14px; max-width: 65ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0 0 14px;
+    padding-left: 22px;
+    max-width: 63ch;
+  }
+  ul li { margin-bottom: 6px; }
+  ul:last-child { margin-bottom: 0; }
+
+  .callout {
+    background: var(--surface-alt);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    margin: 18px 0;
+    font-weight: 600;
+    max-width: 60ch;
+  }
+
+  section.conduct { background: var(--surface); border-radius: 12px; padding: 32px; margin: 36px 0; border-top: none; }
+  section.conduct + section { border-top: none; }
+
+  a { color: var(--link); }
+
+  code {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.92em;
+    background: var(--surface-alt);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  footer p { max-width: none; }
+
+  @media (max-width: 560px) {
+    nav.toc ol { columns: 1; }
+    .wrap { padding: 40px 18px 72px; }
+  }
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<div class="wrap">
+
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 6C10 2 4 2 3 6C2 9.5 6 11 12 12C6 13 2 14.5 3 18C4 22 10 22 12 18C14 22 20 22 21 18C22 14.5 18 13 12 12C18 11 22 9.5 21 6C20 2 14 2 12 6Z" fill="var(--accent)"/>
+    </svg>
+    <span>ButterFact</span>
+  </div>
+
+  <h1>Privacy Policy &amp; Code of Conduct</h1>
+  <div class="meta">Last updated September 6, 2026</div>
+  <p class="lede">ButterFact helps people evaluate real-world claims, take evidence-based action, and see what actually happened as a result. This document explains what information we collect, how we use it, the choices you have, and the standards we expect from everyone using ButterFact.</p>
+
+  <nav class="toc">
+    <span class="toc-label">On this page</span>
+    <ol>
+      <li><span class="n">1</span><a href="#collect">Information we collect</a></li>
+      <li><span class="n">2</span><a href="#use">How we use your information</a></li>
+      <li><span class="n">3</span><a href="#choices">Your choices and consent</a></li>
+      <li><span class="n">4</span><a href="#retention">Data retention and deletion</a></li>
+      <li><span class="n">5</span><a href="#security">Data security</a></li>
+      <li><span class="n">6</span><a href="#conduct">Code of conduct</a></li>
+      <li><span class="n">7</span><a href="#changes">Changes to this policy</a></li>
+      <li><span class="n">8</span><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="collect">
+    <div class="sec-head"><span class="sec-num">01</span><h2>Information we collect</h2></div>
+
+    <h3>Account information</h3>
+    <ul>
+      <li>Email address and password</li>
+      <li>Username</li>
+    </ul>
+
+    <h3>Profile information you choose to provide</h3>
+    <ul>
+      <li>Age, gender, nationality, occupation category, languages spoken, height, sexual orientation, MBTI type, zodiac sign</li>
+      <li>Bio and "what I'm looking for" text</li>
+      <li>Interests</li>
+    </ul>
+
+    <h3>Location information</h3>
+    <p>If you enable location sharing, we use your location to show relevant nearby claims, events, and evidence.</p>
+
+    <h3>Media</h3>
+    <p>Photos and videos you upload as evidence, or as a profile photo.</p>
+
+    <h3>Activity information</h3>
+    <p>Claims you submit, actions you confirm, outcomes you report, and truth assessments you cast. Comments and discussion you post.</p>
+
+    <h3>Device information</h3>
+    <p>A device identifier and, if enabled, a push-notification token, used to keep you signed in and to deliver notifications.</p>
+  </section>
+
+  <section id="use">
+    <div class="sec-head"><span class="sec-num">02</span><h2>How we use your information</h2></div>
+    <p>We use your information to:</p>
+    <ul>
+      <li>Operate the core ButterFact loop — showing you relevant claims, letting you propose and confirm actions, and recording outcomes.</li>
+      <li>Personalize what's shown to you, including how confrontational or automated the app's suggestions are, based on preferences you set.</li>
+      <li>Keep the platform safe — detecting abuse, spam, and fabricated evidence.</li>
+      <li>Communicate with you about your account and, where you've opted in, send notifications.</li>
+    </ul>
+    <div class="callout">We do not sell your personal information.</div>
+  </section>
+
+  <section id="choices">
+    <div class="sec-head"><span class="sec-num">03</span><h2>Your choices and consent</h2></div>
+    <p>You control what's shared, field by field, in <strong>Settings → Privacy</strong>:</p>
+    <ul>
+      <li>Identity information (whether your username and profile are shown to others)</li>
+      <li>Location information</li>
+      <li>Role/participation visibility</li>
+      <li>Whether uploaded media may be processed automatically (for example, for evidence verification)</li>
+    </ul>
+    <p>You can change any of these at any time. Some profile fields (age, gender, sexual orientation, nationality, height, occupation) can individually be hidden from other users while still being visible to you, in <strong>Settings → Account</strong>.</p>
+  </section>
+
+  <section id="retention">
+    <div class="sec-head"><span class="sec-num">04</span><h2>Data retention and deletion</h2></div>
+    <p>You may request that we anonymize your account and permanently erase your personally identifying information at any time, via <strong>Settings → Account → Freeze or Delete Account</strong>. Once processed, this action cannot be undone. We handle this request in a manner consistent with applicable data protection law, including the GDPR right to erasure.</p>
+    <p>We retain the underlying claims, evidence, and outcome records that make up ButterFact's causal history even after an account is anonymized, since these form a shared factual record — but they are no longer linked to your identity.</p>
+  </section>
+
+  <section id="security">
+    <div class="sec-head"><span class="sec-num">05</span><h2>Data security</h2></div>
+    <p>We use industry-standard measures to protect your information in transit and at rest, including encrypted connections and access controls limiting who can view your data. No system is perfectly secure, and we encourage you to use a strong, unique password.</p>
+  </section>
+
+  <section id="conduct" class="conduct">
+    <div class="sec-head"><span class="sec-num">06</span><h2>Code of conduct — community guidelines</h2></div>
+    <p>ButterFact only works if the evidence people see is trustworthy. When using ButterFact, you agree to:</p>
+    <ul>
+      <li>Submit claims, evidence, and outcome reports honestly and in good faith.</li>
+      <li>Never fabricate or manipulate evidence, including photos or videos submitted in support of a claim.</li>
+      <li>Cast truth assessments based on your genuine judgment, not to manipulate outcomes for other users.</li>
+      <li>Treat other users with respect, even when you disagree with their assessment of a claim.</li>
+      <li>Not harass, threaten, impersonate, or target other users.</li>
+      <li>Report content or behavior that violates these guidelines.</li>
+    </ul>
+    <p>Violations may result in content removal, feature restrictions, or account suspension, as described in our Company Policies and Code of Conduct.</p>
+  </section>
+
+  <section id="changes">
+    <div class="sec-head"><span class="sec-num">07</span><h2>Changes to this policy</h2></div>
+    <p>We may update this policy from time to time. If we make material changes, we will notify you before they take effect.</p>
+  </section>
+
+  <section id="contact">
+    <div class="sec-head"><span class="sec-num">08</span><h2>Contact</h2></div>
+    <p>Questions about this policy or your data can be sent to <a href="mailto:privacy@beingfreebutterfact.com"><code>privacy@beingfreebutterfact.com</code></a>.</p>
+  </section>
+
+  <footer>
+    <p>This document is a working draft prepared for internal review and has not yet been reviewed by legal counsel. Do not treat it as final or legally binding.</p>
+  </footer>
+
+</div>
